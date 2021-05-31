@@ -9,6 +9,19 @@ registerStyles(
         outline: none;
       }
 
+      [part="dash"]::before {
+        content: var(--lumo-icons-minus);
+        font-family: "lumo-icons";
+      }
+
+      [part="dash"] {
+        display: inline-flex;
+        width: 18px;
+        margin-left: -9px;
+        margin-right: -9px;
+        background-color: transparent;
+      }
+
       [part="toggle-button"]::before {
         content: var(--lumo-icons-calendar);
       }
